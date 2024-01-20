@@ -1,9 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bitihlrx2i6l5"]
+[gd_scene load_steps=4 format=3 uid="uid://d38n07gxuxaed"]
 
 [ext_resource type="Script" path="res://main_character.gd" id="1_kdjt1"]
 [ext_resource type="Texture2D" uid="uid://01y6wbudew3l" path="res://Jump (32x32).png" id="1_xg38j"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_61x33"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0le3"]
 radius = 17.0
 height = 46.0
 
@@ -12,10 +12,9 @@ script = ExtResource("1_kdjt1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(9.53674e-07, 9.53674e-07)
-scale = Vector2(1.96875, 1.75)
+scale = Vector2(1.65625, 1.59375)
 texture = ExtResource("1_xg38j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 2)
-shape = SubResource("CapsuleShape2D_61x33")
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_m0le3")
