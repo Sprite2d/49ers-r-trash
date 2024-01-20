@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dcgqs53ue7b4v"]
+[gd_scene load_steps=8 format=3 uid="uid://dcgqs53ue7b4v"]
 
 [ext_resource type="Texture2D" uid="uid://dbsr8t2s58st0" path="res://Green.png" id="1_lfeun"]
 [ext_resource type="Texture2D" uid="uid://cagbpbbrcmcig" path="res://Terrain (16x16).png" id="2_jvsch"]
 [ext_resource type="PackedScene" uid="uid://bitihlrx2i6l5" path="res://main_character.tscn" id="3_art2l"]
 [ext_resource type="PackedScene" uid="uid://dlnqtbxm4vfnb" path="res://collectable.tscn" id="4_a08i1"]
+[ext_resource type="Script" path="res://game_manager.gd" id="5_08ny7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a1j4h"]
 texture = ExtResource("2_jvsch")
@@ -611,41 +612,49 @@ position = Vector2(87, 597)
 position_smoothing_enabled = true
 position_smoothing_speed = 4.0
 
-[node name="collectable" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectables group" type="Node" parent="."]
+
+[node name="collectable" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(313, 560)
 
-[node name="collectable2" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable2" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(221, 560)
 
-[node name="collectable3" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable3" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(462, 511)
 
-[node name="collectable4" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable4" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(611, 466)
 
-[node name="collectable5" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable5" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(650, 464)
 
-[node name="collectable6" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable6" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(789, 464)
 
-[node name="collectable7" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable7" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(944, 465)
 
-[node name="collectable8" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable8" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(1083, 416)
 
-[node name="collectable9" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable9" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(811, 273)
 
-[node name="collectable10" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable10" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(691, 268)
 
-[node name="collectable11" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable11" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(550, 272)
 
-[node name="collectable12" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable12" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(407, 220)
 
-[node name="collectable13" parent="." instance=ExtResource("4_a08i1")]
+[node name="collectable13" parent="collectables group" instance=ExtResource("4_a08i1")]
 position = Vector2(264, 271)
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("5_08ny7")
+
+[node name="Area2D" type="Area2D" parent="."]
