@@ -30,29 +30,20 @@ grow_vertical = 2
 texture = ExtResource("2_1tgtu")
 
 [node name="level 1" type="Button" parent="."]
-offset_left = 109.0
-offset_top = 349.0
-offset_right = 208.0
-offset_bottom = 414.0
-theme_override_font_sizes/font_size = 30
+offset_left = 163.0
+offset_top = 370.0
+offset_right = 490.0
+offset_bottom = 593.0
+theme_override_font_sizes/font_size = 80
 text = "level 1"
 
 [node name="level 2" type="Button" parent="."]
-offset_left = 349.0
-offset_top = 345.0
-offset_right = 449.0
-offset_bottom = 411.0
-theme_override_font_sizes/font_size = 30
+offset_left = 627.0
+offset_top = 371.0
+offset_right = 997.0
+offset_bottom = 590.0
+theme_override_font_sizes/font_size = 81
 text = "level 2"
-
-[node name="level 3" type="Button" parent="."]
-offset_left = 524.0
-offset_top = 346.0
-offset_right = 643.0
-offset_bottom = 407.0
-theme_override_font_sizes/font_size = 30
-text = "level 3"
 
 [connection signal="pressed" from="level 1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level 2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="level 3" to="." method="_on_level_3_pressed"]
