@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dlnqtbxm4vfnb" path="res://collectable.tscn" id="4_kb6pr"]
 [ext_resource type="PackedScene" uid="uid://j138jxpe7jym" path="res://finish.tscn" id="5_4tmht"]
 [ext_resource type="PackedScene" uid="uid://d38n07gxuxaed" path="res://main_character.tscn" id="6_blk4g"]
-[ext_resource type="PackedScene" uid="uid://ppbtgyc4x1j4" path="res://level 2.tscn" id="6_ohet1"]
+[ext_resource type="PackedScene" uid="uid://dldu0oa6t2oc3" path="res://quetion_1.tscn" id="6_ned0j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a1j4h"]
 texture = ExtResource("3_sp142")
@@ -657,7 +657,7 @@ position = Vector2(264, 271)
 [node name="finish" parent="sceneObjects" instance=ExtResource("5_4tmht")]
 texture_filter = 1
 position = Vector2(92, 207)
-target_level = ExtResource("6_ohet1")
+target_level = ExtResource("6_ned0j")
 
 [node name="CharacterBody2D" parent="sceneObjects" instance=ExtResource("6_blk4g")]
 position = Vector2(93, 598)
