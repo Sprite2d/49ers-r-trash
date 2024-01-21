@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://cq12pap8i5h4m"]
+
+[ext_resource type="Texture2D" uid="uid://c8uqjynnhhicd" path="res://Brown.png" id="1_bxaia"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_u2eaw"]
+[ext_resource type="Texture2D" uid="uid://cwsdultruoepo" path="res://Cool Text - Quiz Quest 451066492342167.png" id="2_1tgtu"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_u2eaw")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1146.0
+offset_bottom = 648.0
+size_flags_horizontal = 0
+texture = ExtResource("1_bxaia")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.0
+offset_top = -228.0
+offset_right = 520.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1tgtu")
+
+[node name="level 1" type="Button" parent="."]
+offset_left = 129.0
+offset_top = 324.0
+offset_right = 226.0
+offset_bottom = 389.0
+theme_override_font_sizes/font_size = 30
+text = "level 1"
+
+[node name="level 2" type="Button" parent="."]
+offset_left = 336.0
+offset_top = 323.0
+offset_right = 435.0
+offset_bottom = 388.0
+theme_override_font_sizes/font_size = 30
+text = "level 2"
+
+[connection signal="pressed" from="level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level 2" to="." method="_on_level_2_pressed"]
