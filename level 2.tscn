@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ppbtgyc4x1j4"]
+[gd_scene load_steps=10 format=3 uid="uid://ppbtgyc4x1j4"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_7awu0"]
 [ext_resource type="Texture2D" uid="uid://dbsr8t2s58st0" path="res://Green.png" id="2_dtvbo"]
 [ext_resource type="Texture2D" uid="uid://cagbpbbrcmcig" path="res://Terrain (16x16).png" id="3_u7qyv"]
+[ext_resource type="PackedScene" uid="uid://dlnqtbxm4vfnb" path="res://collectable.tscn" id="4_8ckdl"]
+[ext_resource type="PackedScene" uid="uid://cq12pap8i5h4m" path="res://main_menu.tscn" id="5_7xojm"]
 [ext_resource type="PackedScene" uid="uid://j138jxpe7jym" path="res://finish.tscn" id="5_77me1"]
 [ext_resource type="PackedScene" uid="uid://d38n07gxuxaed" path="res://main_character.tscn" id="6_ee4ae"]
 
@@ -614,6 +616,7 @@ layer_0/tile_data = PackedInt32Array(917503, 131072, 4, 851992, 0, 4, 851968, 65
 [node name="finish" parent="sceneObjects" instance=ExtResource("5_77me1")]
 texture_filter = 1
 position = Vector2(1129, 13)
+target_level = ExtResource("5_7xojm")
 
 [node name="CharacterBody2D" parent="sceneObjects" instance=ExtResource("6_ee4ae")]
 position = Vector2(73, 550)
@@ -647,3 +650,57 @@ theme_override_font_sizes/font_size = 10
 text = "points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="collectable" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(213, 464)
+
+[node name="collectable2" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(432, 414)
+
+[node name="collectable3" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(615, 368)
+
+[node name="collectable4" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(885, 411)
+
+[node name="collectable5" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(931, 411)
+
+[node name="collectable6" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(975, 410)
+
+[node name="collectable7" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(1029, 411)
+
+[node name="collectable8" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(1083, 410)
+
+[node name="collectable9" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(1129, 414)
+
+[node name="collectable10" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(435, 272)
+
+[node name="collectable11" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(239, 221)
+
+[node name="collectable12" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(71, 223)
+
+[node name="collectable13" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(239, 127)
+
+[node name="collectable14" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(401, 80)
+
+[node name="collectable15" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(644, 83)
+
+[node name="collectable16" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(787, 83)
+
+[node name="collectable17" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(937, 79)
+
+[node name="collectable18" parent="." instance=ExtResource("4_8ckdl")]
+position = Vector2(1049, 32)
